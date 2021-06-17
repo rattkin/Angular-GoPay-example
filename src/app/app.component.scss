@@ -1,7 +1,16 @@
-.form-group{
-    text-align: center;
+:host {
+  text-align: center;
+}
 
-    input {
-        width: 50px;
-    }
+.form-group {
+
+  input {
+    width: 50px;
+  }
+
+  img {
+
+    width: 500px;
+    max-width: 100%;
+  }
 }
