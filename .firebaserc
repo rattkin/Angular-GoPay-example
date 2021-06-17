@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-gopay-example": {
+      "hosting": {
+        "Angular-GoPay-example": [
+          "angular-gopay-example"
+        ]
+      }
+    }
+  }
+}
