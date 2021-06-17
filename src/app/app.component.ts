@@ -24,7 +24,7 @@ export class AppComponent implements OnDestroy {
   private subs = new SubSink()
 
   pay(): void {
-    this.subs.sink = this.http.get(GoPayPaymentEndpoint + this.model.amount)
+    this.subs.sink = this.http.get(GoPayPaymentEndpoint + '?method=pay&amount=' + this.model.amount)
       .subscribe(res => {
         if (res && typeof res === 'string') {
           console.log('Opening gateway with URL', res);
